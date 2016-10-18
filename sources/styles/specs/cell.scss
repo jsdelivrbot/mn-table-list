@@ -1,0 +1,14 @@
+.mn-table-list td {
+  display: none;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+
+  &:first-child, &.sm-visible {display: flex}
+
+  @include layout-sm {
+    & + td {
+      display: flex;
+    }
+  }
+}
