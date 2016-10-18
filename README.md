@@ -21,7 +21,7 @@ Or just download the main file ```dist/mn-table-list.css``` in your project, and
 
 ### Usage
 
-Use the class .mn-table-list in a tag table
+Juse use the class `.mn-table-list` in a tag table, and use inside their, thead, and tbody to content.
 
 ```html
 <table class="mn-table-list">
