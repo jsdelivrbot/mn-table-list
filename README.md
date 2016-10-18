@@ -46,6 +46,22 @@ Juse use the class `.mn-table-list` in a tag table, and use inside their, thead,
 ```
 
 
+## Responsive
+
+In screens smaller than 600px, only the first td in every line will be displayed. If you want force a td to always be visible, use the class `.sm-visible`, e.g.
+
+```html
+<tr>
+  <td>Name</td>
+  <td class="sm-visible">Email</td>
+</tr>
+
+<tr>
+  <td>John Snow</td>
+  <td class="sm-visible">snow@iknownothing.com</td>
+</tr>
+```
+
 
 
 

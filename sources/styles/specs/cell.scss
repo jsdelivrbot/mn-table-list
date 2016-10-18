@@ -3,6 +3,7 @@
   flex: 1;
   flex-direction: column;
   justify-content: center;
+  word-break: break-all;
 
   &:first-child, &.sm-visible {display: flex}
 
