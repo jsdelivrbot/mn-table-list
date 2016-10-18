@@ -1,3 +1,46 @@
-.mn-table-list {
-  &, thead, tbody {display: block}
+.mn-list {
+  header, .item {
+    padding: 1.6em 2em;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  .item {
+    border-top: 1px solid #f0f0f0;
+
+    &:first-child {border: 0}
+
+    &[href] {
+      transition: background-color .2s ease;
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+
+  header > * {
+    color: silver;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  header > *, .item > * {
+    display: none;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    word-break: break-all;
+
+    &:first-child, &.sm-visible {display: flex}
+
+    @include layout-sm {
+      & + td, & + * {
+        display: flex;
+      }
+    }
+  }
+
 }

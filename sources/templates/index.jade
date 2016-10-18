@@ -19,17 +19,18 @@ body
   h2 .mn-table-list
 
   .container
-    table.mn-table-list
-      thead: tr
-        td Nome
-        td Email
+    .mn-list
+      header
+        h3 Nome
+        h3 Email
 
-      tbody
-        tr
-          td John Snow
-          td snow@iknownothing.com
+      .item Khal Drogo
 
-        tr
-          td Khaleesi
-          td motherofdragons@targaryen.com
+      a.item(href='#')
+        span John Snow
+        span snow@iknownothing.com
+
+      a.item(href='#')
+        span Khaleesi
+        span motherofdragons@targaryen.com
   
