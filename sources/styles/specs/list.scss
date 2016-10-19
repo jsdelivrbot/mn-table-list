@@ -19,25 +19,19 @@
         background-color: #f2f2f2;
       }
     }
-
-    // &.active {
-    //   cursor: default;
-    //   pointer-events: none;
-    // }
   }
 
-  .item[href]:hover + .item-detail {
+  // .item[href]:hover + .item-detail {
+  .item.active + .item-detail {
     max-height: 1000px;
-    // margin-bottom: 1.6em;
+    padding: 1.6em 2em;
   }
 
   .item-detail {
     padding: 0 2em;
     max-height: 0;
-    transition: all .3s ease;
     overflow: hidden;
     transform: translateZ(0);
-    will-change: max-height;
   }
 
   header > * {
