@@ -1,11 +1,11 @@
-.mn-list {
-  header, .item {
+.mn-table-list {
+  header, .mn-item {
     padding: 1.6em 2em;
     box-sizing: border-box;
     display: flex;
   }
 
-  .item {
+  .mn-item {
     border-top: 1px solid #f0f0f0;
     color: inherit;
     text-decoration: none;
@@ -21,13 +21,12 @@
     }
   }
 
-  // .item[href]:hover + .item-detail {
-  .item.active + .item-detail {
+  .mn-item.active + .mn-item-detail {
     max-height: 1000px;
     padding: 1.6em 2em;
   }
 
-  .item-detail {
+  .mn-item-detail {
     padding: 0 2em;
     max-height: 0;
     overflow: hidden;
@@ -40,7 +39,7 @@
     margin: 0;
   }
 
-  header > *, .item > * {
+  header > *, .mn-item > * {
     display: none;
     flex: 1;
     flex-direction: column;
