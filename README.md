@@ -2,6 +2,8 @@
 
 Table list with a minimalist design
 
+![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-table-list/master/sources/imgs/preview.png)
+
 <!-- See the [demo](https://codepen.io/darlanmendonca/full/vKqLOx) -->
 
 ### Install
