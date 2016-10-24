@@ -9,27 +9,27 @@ Table list with a minimalist design
 With bower
 
 ```sh
-bower install --save mn-list
+bower install --save mn-table-list
 ```
 
-Or just download the main file ```dist/mn-list.css``` in your project, and make a reference to their, like:
+Or just download the main file ```dist/mn-table-list.css``` in your project, and make a reference to their, like:
 
 ```html
-<link rel="stylesheet" href="path/to/dist/mn-list.css">
+<link rel="stylesheet" href="path/to/dist/mn-table-list.css">
 ```
 
 
 ### Usage
 
-Just use the class `.mn-list` in a div, and inside of them, `.mn-list-item`.
+Just use the class `.mn-table-list` in a div, and inside of them, `.mn-item`.
 
 ```pug
-.mn-list
-  .mn-list-item
+.mn-table-list
+  .mn-item
     span John Snow
     span snow@iknownothing.com
 
-  .mn-list-item
+  .mn-item
     span Khaleesi
     span motherofdragons@targaryen.com
 ```
@@ -38,11 +38,11 @@ Just use the class `.mn-list` in a div, and inside of them, `.mn-list-item`.
 If you want a header, just use the tag header before items, each title need be h1, h2, ... h6, e.g.
 
 ```pug
-.mn-list
+.mn-table-list
   header
     h2 Name
     h3 Email
-    
+
   .mn-list-item
     span John Snow
     span snow@iknownothing.com
@@ -54,7 +54,7 @@ If you want a header, just use the tag header before items, each title need be h
 In screens smaller than 600px, only the first td in every line will be displayed. If you want force a td to always be visible, use the class `.sm-visible`, e.g.
 
 ```html
-.mn-list
+.mn-table-list
   header
     h3 Name
     h3.sm-visible Email
