@@ -21,14 +21,10 @@ Or just download the main file ```dist/mn-list.css``` in your project, and make 
 
 ### Usage
 
-Juse use the class `.mn-list` in a tag table, and use inside their, thead, and tbody to content.
+Just use the class `.mn-list` in a div, and inside of them, `.mn-list-item`.
 
 ```pug
 .mn-list
-  header
-    h3 Name
-    h3 Email
-
   .mn-list-item
     span John Snow
     span snow@iknownothing.com
@@ -36,6 +32,20 @@ Juse use the class `.mn-list` in a tag table, and use inside their, thead, and t
   .mn-list-item
     span Khaleesi
     span motherofdragons@targaryen.com
+```
+
+
+If you want a header, just use the tag header before items, each title need be h1, h2, ... h6, e.g.
+
+```pug
+.mn-list
+  header
+    h2 Name
+    h3 Email
+    
+  .mn-list-item
+    span John Snow
+    span snow@iknownothing.com
 ```
 
 
