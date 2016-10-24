@@ -23,22 +23,19 @@ Or just download the main file ```dist/mn-list.css``` in your project, and make 
 
 Juse use the class `.mn-list` in a tag table, and use inside their, thead, and tbody to content.
 
-```html
-<div class="mn-list">
-  <header>
-    <h3>Name</h3>
-    <h3>Email</h3>
-  </header>
+```pug
+.mn-list
+  header
+    h3 Name
+    h3 Email
 
-  <div class="mn-list-item">
-    <span>John Snow</span>
-    <span>snow@iknownothing.com</span>
-  </div>
-  <div class="mn-list-item">
-    <span>Khaleesi</span>
-    <span>motherofdragons@targaryen.com</span>
-  </div>
-</div>
+  .mn-list-item
+    span John Snow
+    span snow@iknownothing.com
+
+  .mn-list-item
+    span Khaleesi
+    span motherofdragons@targaryen.com
 ```
 
 
@@ -47,15 +44,14 @@ Juse use the class `.mn-list` in a tag table, and use inside their, thead, and t
 In screens smaller than 600px, only the first td in every line will be displayed. If you want force a td to always be visible, use the class `.sm-visible`, e.g.
 
 ```html
-<header>
-  <h3>Name</h3>
-  <h3 class="sm-visible">Email</h3>
-</header>
+.mn-list
+  header
+    h3 Name
+    h3.sm-visible Email
 
-<div class="mn-list-item">
-  <span>John Snow</span>
-  <span class="sm-visible">snow@iknownothing.com</span>
-</div>
+  .mn-list-item
+    span John Snow
+    span.sm-visible snow@iknownothing.com
 ```
 
 
