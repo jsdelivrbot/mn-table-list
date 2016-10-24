@@ -43,7 +43,7 @@ If you want a header, just use the tag header before items, each title need be h
     h2 Name
     h3 Email
 
-  .mn-list-item
+  .mn-item
     span John Snow
     span snow@iknownothing.com
 ```
@@ -51,7 +51,7 @@ If you want a header, just use the tag header before items, each title need be h
 
 ## Responsive
 
-In screens smaller than 600px, only the first td in every line will be displayed. If you want force a td to always be visible, use the class `.sm-visible`, e.g.
+In screens smaller than 600px, only the first content of in every .mn-item will be displayed. If you want force to always be visible, use the class `.sm-visible`, e.g.
 
 ```html
 .mn-table-list
@@ -59,7 +59,7 @@ In screens smaller than 600px, only the first td in every line will be displayed
     h3 Name
     h3.sm-visible Email
 
-  .mn-list-item
+  .mn-item
     span John Snow
     span.sm-visible snow@iknownothing.com
 ```
