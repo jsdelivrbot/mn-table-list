@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "Minimalist table list component",
   "main": [
-    "dist/mn-table-list.css",
-    "sources/styles/mn-table-list.scss"
+    "dist/mn-table-list.css"
   ],
   "authors": [
     "Darlan Mendonça <darlanmendonca@gmail.com>"
