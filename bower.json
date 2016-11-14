@@ -1,6 +1,6 @@
 {
   "name": "mn-table-list",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Minimalist table list component",
   "main": [
     "dist/mn-table-list.css"
