@@ -38,7 +38,7 @@ function stylesTask() {
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle}))
     .pipe(autoprefixer())
-    .pipe(rename('mn-table-list.css'))
+    .pipe(rename(styles.output))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(styles.dest))
     .pipe(browserSync.stream({match: '**/*.css'}));

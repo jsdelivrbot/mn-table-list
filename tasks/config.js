@@ -8,6 +8,7 @@ module.exports = {
     watch: './sources/styles/**/*.scss',
     dest: './dist/',
     sourcemaps: '/sources/styles',
+    output: 'mn-table-list.css',
   },
   scripts: {
     src: [
@@ -15,6 +16,7 @@ module.exports = {
       '!./sources/**/*.spec.js',
     ],
     dest: './dist/',
+    output: 'mn-table-list.js',
   },
   lintScripts: [
     './gulpfile.js',
