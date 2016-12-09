@@ -1,4 +1,4 @@
-# Minimalist table list
+# mn-table-list
 
 Table list with a minimalist design
 
@@ -14,11 +14,7 @@ With bower
 bower install --save mn-table-list
 ```
 
-Or just download the main file ```dist/mn-table-list.css``` in your project, and make a reference to their, like:
-
-```html
-<link rel="stylesheet" href="path/to/dist/mn-table-list.css">
-```
+Or just download the main files, located in [dist/](https://github.com/minimalist-components/mn-table-list/tree/master/dist)
 
 
 ### Usage
