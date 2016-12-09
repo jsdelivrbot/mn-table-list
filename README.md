@@ -8,8 +8,6 @@ Table list with a minimalist design
 
 ### Install
 
-With bower
-
 ```sh
 bower install --save mn-table-list
 ```
