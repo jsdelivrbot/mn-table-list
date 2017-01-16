@@ -1,0 +1,41 @@
+html
+  meta(name='viewport' content='width=device-width, user-scalable=no')
+  title mn-table-list
+  base(href='/')
+    
+  block styles
+    link(rel='stylesheet' href='docs/vendor.css')
+    link(rel='stylesheet' href='dist/mn-table-list.css')
+
+  style.
+    .demo .mn-card {margin: 1em}
+
+body
+  h2 mn-table-list
+  include github-corner
+
+  .layout-fullscreen.layout-centered    
+    .demo.layout-column.layout-sm-row
+      .mn-card.padding-title.flex-sm-50.flex-md-60
+        h2 Lorem ipsum
+        .mn-table-list
+          a.mn-item(href='#' close-dialog)
+            span John Snow
+
+          a.mn-item(href='#' close-dialog)
+            span Daenerys Targaryen
+
+          a.mn-item(href='#' close-dialog)
+            span Tyrion Lannister
+
+  .docs.layout-container
+    mn-code.sh.
+      # to install this module
+      bower install --save mn-table-list
+
+    p Or just download the main files, located in dist/
+    
+
+  block scripts
+    script(src='docs/vendor.js')
+    script(src='dist/mn-table-list.js')

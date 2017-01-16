@@ -1,38 +1,8 @@
-html
-  meta(name='viewport' content='width=device-width, user-scalable=no')
-  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans')
-  link(rel='stylesheet' href='mn-table-list.css')
-  style.
-    body {
-      font-family: 'Open Sans', sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
+extends demo
 
-    .container {
-      max-width: 1070px;
-      margin: 0 auto;
-    }
+block styles
+  link(rel='stylesheet' href='https://rawgit.com/minimalist-components/mn-table-list/master/docs/vendor.css')
+  link(rel='stylesheet' href='https://rawgit.com/minimalist-components/mn-table-list/master/dist/mn-table-list.css')
 
-body
-  h2 .mn-table-list
-
-  .container
-    .mn-table-list
-      header
-        h3 Nome
-        h3 Email
-
-      .mn-item Khal Drogo
-
-      a.mn-item.active(href='#')
-        span John Snow
-        span snow@iknownothing.com
-
-      .mn-item-detail Lorem ipsum dolor
-        br
-        | lorem lorem lorem
-
-      a.mn-item(href='#')
-        span Khaleesi
-        span motherofdragons@targaryen.com
-  
+block scripts
+  script(src='https://rawgit.com/minimalist-components/mn-table-list/master/docs/vendor.js')

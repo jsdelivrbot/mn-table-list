@@ -11,6 +11,9 @@
   "license": "MIT",
   "homepage": "",
   "dependencies": {
-    "mn-palette-color": "^0.0.1"
+    "open-color": "^1.4.1"
+  },
+  "devDependencies": {
+    "mn-card": "^0.1.0"
   }
 }
