@@ -11,7 +11,7 @@ module.exports = {
     watch: './sources/styles/**/*.scss',
     dest: './dist/',
     sourcemaps: '/sources/styles',
-    output: 'mn-card.css',
+    output: 'mn-table-list.css',
   },
   scripts: {
     src: [

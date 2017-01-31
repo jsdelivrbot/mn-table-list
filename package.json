@@ -2,6 +2,10 @@
   "name": "mn-table-list",
   "version": "0.0.1",
   "description": "a table list component, responsive and minimalist",
+  "main": "dist/mn-table-list.css",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "scripts/start.sh",
     "bundle": "scripts/bundle.sh",
