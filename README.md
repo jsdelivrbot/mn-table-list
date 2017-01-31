@@ -1,3 +1,7 @@
+[![npm version](https://badge.fury.io/js/mn-table-list.svg)](https://badge.fury.io/js/mn-table-list)
+[![Dependency Status](https://gemnasium.com/badges/github.com/minimalist-components/mn-table-list.svg)](https://gemnasium.com/github.com/minimalist-components/mn-table-list)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)   
+
 # mn-table-list
 
 Table list with a minimalist design

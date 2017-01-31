@@ -9,6 +9,7 @@ function vendorJSTask() {
   const devDependencies = [
     'mn-gh-page',
   ]
+
   const dependencies = packageFiles(devDependencies)
     .filter(dep => dep.endsWith('.js'))
     .map(item =>
