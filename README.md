@@ -19,29 +19,26 @@ And bundle dependencies and main files in [dist/](https://github.com/minimalist-
 
 Just use the class `.mn-table-list` in a div, and inside of them, `.mn-item`.
 
-```pug
-.mn-table-list
-  .mn-item
-    span John Snow
-    span snow@iknownothing.com
-
-  .mn-item
-    span Khaleesi
-    span motherofdragons@targaryen.com
+```html
+<div class="mn-table-list">
+  <div class="mn-item">
+    <span>John Snow</span>
+    <span>snow@iknownothing.com</span>
+  </div>
+</div>
 ```
 
 
 If you want a header, just use the tag header before items, each title need be h1, h2, ... h6, e.g.
 
-```pug
-.mn-table-list
-  header
-    h2 Name
-    h3 Email
-
-  .mn-item
-    span John Snow
-    span snow@iknownothing.com
+```html
+<div class="mn-table-list">
+  <header>
+    <h2>Name</h2>
+    <h2>Email</h2>
+  </header>
+  <!-- .mn-item's here -->
+</div>
 ```
 
 

@@ -38,7 +38,42 @@ body
       # to install this module
       npm install --save mn-table-list
 
-    p And bundle dependencies and main files in <strong>dist/</strong> with your preferred tool.    
+    p And bundle dependencies and main files in <strong>dist/</strong> with your preferred tool.
+
+    h3 usage
+    p Just use the class <strong class="attribute">.mn-table-list</strong> in a div, and inside of them, <strong class="attribute">.mn-item</strong>.
+    mn-code.
+      <div class="mn-table-list">
+        <div class="mn-item">
+          <span>John Snow</span>
+          <span>snow@iknownothing.com</span>
+        </div>
+      </div>
+
+    p If you want a header, just use the tag header before items, each title need be h1, h2, ... h6, e.g.
+    mn-code.
+      <div class="mn-table-list">
+        <header>
+          <h2>Name</h2>
+          <h2>Email</h2>
+        </header>
+        <!-- .mn-item's here -->
+      </div>
+
+    h3 responsive
+    p In screens smaller than 600px, only the first content of in every .mn-item will be displayed. If you want force to always be visible, use the class <strong class="attribute">.sm-visible</strong>, in titles or .mn-items's, e.g.
+    mn-code.
+      <div class="mn-table-list">
+        <header>
+          <h2>Name</h2>
+          <h2 class="sm-visible">Email</h2>
+        </header>
+        <div class="mn-item">
+          <span>John Snow</span>
+          <span class="sm-visible">snow@iknownothing.com</span>
+        </div>
+      </div>
+
 
   block scripts
     script(src='docs/vendor.js')
