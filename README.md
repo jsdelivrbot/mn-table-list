@@ -2,7 +2,9 @@
 
 Table list with a minimalist design
 
-[![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-table-list/master/sources/imgs/preview.png)](https://minimalist-components.github.io/mn-table-list/)
+<a href="https://minimalist-components.github.io/mn-table-list/">
+<img src="https://raw.githubusercontent.com/minimalist-components/mn-table-list/master/preview.png">
+</a>
 
 See the [demo](https://minimalist-components.github.io/mn-table-list/)
 
