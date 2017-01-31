@@ -8,14 +8,19 @@ html
     link(rel='stylesheet' href='dist/mn-table-list.css')
 
   style.
-    .demo .mn-card {margin: 1em}
+    .demo {width: 100%}
+    .demo .mn-card {
+      margin: 1em auto;
+      display: block;
+      width: 100%;
+    }
 
 body
   h2 mn-table-list
   include github-corner
 
-  .layout-fullscreen.layout-centered    
-    .demo.layout-column.layout-sm-row
+  .mn-layout-fullscreen.mn-layout-centered    
+    .demo.mn-layout-column.mn-layout-sm-row
       .mn-card.padding-title.flex-sm-50.flex-md-60
         h2 Lorem ipsum
         .mn-table-list
@@ -28,14 +33,12 @@ body
           a.mn-item(href='#' close-dialog)
             span Tyrion Lannister
 
-  .docs.layout-container
+  .docs.mn-layout-container
     mn-code.sh.
       # to install this module
-      bower install --save mn-table-list
+      npm install --save mn-table-list
 
-    p Or just download the main files, located in dist/
-    
+    p And bundle dependencies and main files in <strong>dist/</strong> with your preferred tool.    
 
   block scripts
     script(src='docs/vendor.js')
-    script(src='dist/mn-table-list.js')

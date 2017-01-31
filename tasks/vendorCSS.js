@@ -1,25 +1,28 @@
 import gulp from 'gulp'
+import packageFiles from 'package-files'
 import bowerFiles from 'bower-files'
-// import minifyCss from 'gulp-minify-css'
+import minifyCss from 'gulp-clean-css'
 import concat from 'gulp-concat'
 
 gulp.task('vendorCSS', vendorCSSTask)
 
 function vendorCSSTask() {
-  let dependencies = bowerFiles()
-    .ext('css')
-    .files
+  const devDependencies = [
+    'mn-gh-page',
+    // 'mn-card',
+  ]
+  const dependencies = packageFiles(devDependencies)
+    .filter(dep => dep.endsWith('.css'))
+    .filter(dep => !dep.includes('open-color.css'))
 
-  const devDependencies = bowerFiles()
+  const bowerDevDeps = bowerFiles()
     .ext('css')
     .dev()
     .files
 
-  dependencies = dependencies.concat(devDependencies)
-
   return gulp
-    .src(dependencies)
+    .src(dependencies.concat(bowerDevDeps))
     .pipe(concat('vendor.css'))
-    // .pipe(minifyCss({keepSpecialComments: 0}))
-    .pipe(gulp.dest('./dist'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('./docs'))
 }
