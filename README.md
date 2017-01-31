@@ -4,7 +4,7 @@ Table list with a minimalist design
 
 [![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-table-list/master/sources/imgs/preview.png)](https://minimalist-components.github.io/mn-table-list/)
 
-See the [demo](hhttps://minimalist-components.github.io/mn-table-list/)
+See the [demo](https://minimalist-components.github.io/mn-table-list/)
 
 ### Install
 
