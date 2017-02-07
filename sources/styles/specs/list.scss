@@ -11,7 +11,7 @@
     text-decoration: none;
     outline: 0;
 
-    &:first-child {border: 0}
+    &:first-of-type {border: 0}
 
     &[href]:not(.active) {
       transition: background-color .2s ease;
