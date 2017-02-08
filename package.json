@@ -1,6 +1,6 @@
 {
   "name": "mn-table-list",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "a table list component, responsive and minimalist",
   "main": "dist/mn-table-list.css",
   "files": [
