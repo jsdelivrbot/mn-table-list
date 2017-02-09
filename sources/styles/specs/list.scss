@@ -18,13 +18,9 @@
     line-height: 1em;
     cursor: pointer;
     flex-wrap: wrap;
-
-    &:first-child {border-top: 0}
-  }
-
-  .mn-item[href], button.mn-item {
     transition: background-color .2s ease;
 
+    &:first-child {border-top: 0}
     &:not(.detail-visible) {
       &:hover, &:focus {
         background-color: $oc-gray-3;
@@ -57,9 +53,9 @@
     margin: 0;
   }
 
-  header > *, .mn-item > *:not(.mn-item-detail) {
+  .mn-table-list header > *, .mn-item > * {
     display: none;
-    flex: 1;
+  //   flex: 1;
     flex-direction: column;
     justify-content: center;
     word-break: break-all;
