@@ -13,6 +13,10 @@ function showDetail(event) {
     const previousOpened = item.closest('.mn-table-list').querySelector('.mn-item.detail-visible')
     if (previousOpened && previousOpened !== item) {
       previousOpened.classList.remove('detail-visible')
+      const subItems = previousOpened.querySelectorAll('.mn-item.detail-visible')
+      Array
+        .from(subItems)
+        .forEach(item => item.classList.remove('detail-visible'))
     }
 
     item.classList.add('detail-visible')
