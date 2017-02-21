@@ -48,19 +48,24 @@ If you want a header, just use the tag header before items, each title need be h
 ```
 
 
-## Responsive
+## Grid system
 
-In screens smaller than 600px, only the first content of in every .mn-item will be displayed. If you want force to always be visible, use the class `.sm-visible`, e.g.
+To setup the flow of itens, we use another module, called [mn-layout](https://github.com/minimalist-components/mn-layout/)`, but you can use whatever grid system that you wish.
+
+In example below, we use the classes `.mn-layout-column`, `.mn-layout-sm-row` and `.flex` to define a flex direction to content.
 
 ```html
-.mn-table-list
-  header
-    h3 Name
-    h3.sm-visible Email
+<div class="mn-table-list">
+  <header class="mn-layout-column mn-layout-sm-row">
+    <h3 class="flex">Name</h3>
+    <h3 class="flex">Email</h3>
+  </header>
 
-  .mn-item
-    span John Snow
-    span.sm-visible snow@iknownothing.com
+  <div class="mn-item mn-layout-column mn-layout-sm-row">
+    <span class="flex">John Snow</span>
+    <span class="flex">snow@iknownothing.com</span>
+  </div>
+</div>
 ```
 
 

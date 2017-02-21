@@ -27,14 +27,15 @@ npm install --save mn-table-list
   </header>
   <!-- .mn-item's here -->
 </div>
-</mn-code><h3>responsive</h3><p>In screens smaller than 600px, only the first content of in every .mn-item will be displayed. If you want force to always be visible, use the class <strong class="attribute">.sm-visible</strong>, in titles or .mn-items's, e.g.</p><mn-code><div class="mn-table-list">
-  <header>
-    <h2>Name</h2>
-    <h2 class="sm-visible">Email</h2>
+</mn-code><h3>grid system</h3><p>To setup the flow of itens, we use another module, called <a href="https://github.com/minimalist-components/mn-layout/">mn-layout</a>, but you can use whatever grid system that you wish.</p><p>In example below, we use the classes <strong>.mn-layout-column</strong>, <strong>.mn-layout-sm-row</strong> and <strong>.flex</strong> to define a flex direction to content.</p><mn-code class="html"><div class="mn-table-list">
+  <header class="mn-layout-column mn-layout-sm-row">
+    <h3 class="flex">Name</h3>
+    <h3 class="flex">Email</h3>
   </header>
-  <div class="mn-item">
-    <span>John Snow</span>
-    <span class="sm-visible">snow@iknownothing.com</span>
+
+  <div class="mn-item mn-layout-column mn-layout-sm-row">
+    <span class="flex">John Snow</span>
+    <span class="flex">snow@iknownothing.com</span>
   </div>
 </div>
 
