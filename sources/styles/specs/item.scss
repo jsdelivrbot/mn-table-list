@@ -8,7 +8,7 @@
   font-size: inherit;
   width: 100%;
   text-align: inherit;
-  line-height: 1em;
+  line-height: 1.4em;
   cursor: pointer;
   flex-wrap: wrap;
   transition: background-color .2s ease;
@@ -19,9 +19,7 @@
       background-color: $oc-gray-3;
     }
   }
-}
 
-.mn-item {
   &.detail-visible {
     cursor: default;
 

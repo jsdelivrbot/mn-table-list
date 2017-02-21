@@ -2,22 +2,7 @@
   header, .mn-item {
     padding: 1.6em 2em;
     box-sizing: border-box;
-    display: flex;
   }
 
-  .mn-table-list header > *, .mn-item > * {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    word-break: break-all;
-
-    &:first-child, &.sm-visible {display: flex}
-
-    @include layout-sm {
-      & + td, & + * {
-        display: flex;
-      }
-    }
-  }
-
+  .mn-table-list {margin-top: 1em}
 }
